@@ -2,14 +2,18 @@
   "name": "pixi_background",
   "private": true,
   "version": "0.0.0",
+  "homepage": "https://profsfrink.github.io/pixi_demo/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy" : "npm run build",
+    "deploy" : "gh-pages -d dist"
   },
   "devDependencies": {
     "eslint": "9.9.0",
+    "gh-pages": "6.1.1",
     "pixi.js": "8.3.3",
     "prettier": "3.3.3",
     "typescript": "^5.5.3",
