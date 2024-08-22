@@ -2,7 +2,6 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   build: {
-    base: "/pixi_demo/",
     target: "esnext", // Targeting the most modern JavaScript features
     rollupOptions: {
       output: {
